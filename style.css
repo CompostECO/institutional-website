@@ -36,6 +36,10 @@
 * {
   font-family: var(--font-family-default);
   color: var(--olive-950);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .heading-lg {
@@ -75,19 +79,19 @@
 }
 
 .body-md {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
 }
 
 .body-sm {
-  font-size: 12px;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.25rem;
 }
 
 .body-xs {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   line-height: 1rem;
 }
