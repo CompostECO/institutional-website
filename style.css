@@ -42,6 +42,15 @@
   border: 0;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
 .heading-lg {
   font-size: 1.5rem;
   font-weight: 700;
