@@ -161,17 +161,17 @@ header > .container > nav > ul > button, .button-primary-light {
 }
 
 /* SERVICES */
-.main {
+.services {
   padding: 10px;
 }
-.block {
+.services .block {
   height: 300px;
   width: 800px;
-  background-color: #d0d1cc;
+  background-color: var(--lime-50);
   border-radius: 40px;
 }
-.block-title {
-  color: #365314;
+.services .block-title {
+  color: var(--lime-900)
   padding: 10px;
   display: flex;
   text-align: center;
@@ -181,10 +181,10 @@ header > .container > nav > ul > button, .button-primary-light {
   height: 100px;
   width: 1000px;
 }
-.block-title .heading-lg {
-  color: #365314;
+.services .block-title .heading-lg {
+  color: var(--lime-900);
 }
-.container-servicos {
+.services .container-servicos {
   height: 800px;
   width: 100%;
   display: flex;
@@ -193,25 +193,23 @@ header > .container > nav > ul > button, .button-primary-light {
   flex-direction: column;
 
 }
-.block h2{
-  color: #365314;
+.services .block h2{
+  color: var(--lime-900);
 
   padding: 10px;
   display: flex;
   justify-content: center;
 }
-.minor-block{
+.services .minor-block{
   padding-left: 30px;
 }
-.minor-block-collective{
+.services .minor-block-collective{
 display: flex;
 flex-direction: row;
-
 margin-left: 5px;
-
-
 }
-.minor-block-text {
+
+.services .minor-block-text {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
@@ -220,10 +218,10 @@ margin-left: 5px;
   margin: 20px;
   margin-left: 50px;
 }
-.minor-block-text span {
+.services .minor-block-text span {
   padding-bottom: 5px;
 }
-.minor-block-collective .img {
+.services .minor-block-collective .img {
   background-image: url("./public/images/monitoramento.PNG");
   background-size: cover;
   margin: 20px;
@@ -233,7 +231,7 @@ margin-left: 5px;
   width: 300px;
 }
 
-.minor-block-collective .img2 {
+.services .minor-block-collective .img2 {
   background-image: url("./public/images/homens.PNG");
   background-size: cover;
   margin: 20px;
@@ -241,4 +239,8 @@ margin-left: 5px;
   border-radius: 10%;
   height: 150px;
   width: 300px;
+}
+
+.services i {
+  color: var(--lime-500);
 }
