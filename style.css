@@ -239,9 +239,9 @@ header > .container > nav > ul > button, .button-primary-light {
 }
   
 .services .block {
-  height: 300px;
   width: 800px;
   background-color: var(--lime-50);
+  margin-top: 1rem;
   border-radius: 40px;
 }
   
@@ -253,7 +253,6 @@ header > .container > nav > ul > button, .button-primary-light {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  height: 100px;
   width: 1000px;
 }
   
@@ -262,7 +261,6 @@ header > .container > nav > ul > button, .button-primary-light {
 }
 
 .services .container-servicos {
-  height: 800px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -282,23 +280,24 @@ header > .container > nav > ul > button, .button-primary-light {
 }
 
 .services .minor-block-collective{
-display: flex;
-flex-direction: row;
-margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
 }
 
 .services .minor-block-text {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 150px;
   width: 420px;
   margin: 20px;
   margin-left: 50px;
 }
 
 .services .minor-block-text span {
-  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
 }
 
 .services .minor-block-collective .img {
@@ -323,7 +322,9 @@ margin-left: 5px;
 
 .services i {
   color: var(--lime-500);
- }
+  font-size: 1.4rem;
+  margin-right: 8px;
+}
   
 /*Sobre nós*/
 .container-sobre {
