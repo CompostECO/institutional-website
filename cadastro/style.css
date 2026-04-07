@@ -73,7 +73,8 @@
 
 /* ===== CADASTRO (LAYOUT) ===== */
 .cadastro-page {
-  background: var(--lime-900); /* verde escuro */
+  background: var(--lime-900);
+  /* verde escuro */
   min-height: 100vh;
 
   display: flex;
@@ -92,7 +93,7 @@
   gap: 16px;
   text-align: center;
 
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .cadastro-card img {
