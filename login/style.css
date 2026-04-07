@@ -25,7 +25,7 @@
 
 /* ===== CADASTRO (LAYOUT) ===== */
 .cadastro-page {
-  background: var(--lime-900); /* verde escuro */
+  background: var(--lime-950); /* verde escuro */
   min-height: 100vh;
 
   display: flex;
