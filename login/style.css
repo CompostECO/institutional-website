@@ -63,3 +63,11 @@
 .cadastro-card .input-with-label {
   text-align: left;
 }
+
+.back i {
+  color: var(--olive-50);
+  font-size: 3rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}

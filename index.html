@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>CompostECO</title>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+  />
 </head>
 <body>
   <!-- <p class="heading-lg text-lime-950">Título grande</p>
@@ -29,7 +34,7 @@
           <a class="body-md" href="#services-section">Nossos Serviços</a>
         </ul>
       </nav>
-      <button class="button-primary-light">
+      <button onclick="window.location.href = './login/index.html'" class="button-primary-light">
         Login
       </button>
     </div>
@@ -38,7 +43,7 @@
   <section id="hero-section">
     sessão inicial
   </section>
-  <section>
+  <section id="services-section">
     <div class="services">
       <div class="container-servicos">
         <div class="block-title">
@@ -77,7 +82,7 @@
     </div>
     </div>
   </section>
-  <section class="container-sobre">
+  <section class="container-sobre" id="about-section">
         <div class="coluna-texto">
             <h2 class="titulo-sobre">Sobre nós</h2>
             <p>
@@ -107,10 +112,10 @@
         <div class="">
           <h1 class="heading-lg">Navegação</h1>
           <div class="body-sm list">
-            <a>Início</a>
-            <a>Sobre nós</a>
-            <a>Nossos serviços</a>
-            <a>Dashbord</a>
+            <a href="#hero-section">Início</a>
+            <a href="#about-section">Sobre nós</a>
+            <a href="#services-section">Nossos serviços</a>
+            <a href="login/index.html">Dashbord</a>
           </div>
         </div>
       </div>
