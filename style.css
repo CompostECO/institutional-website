@@ -116,3 +116,70 @@ ul {
 .text-danger-base {
   color: var(--danger-base);
 }
+/*Sobre nós*/
+.container-sobre {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.coluna-texto {
+    flex: 1;
+}
+
+.titulo-sobre {
+    font-size: 28px;
+    color: #4a6d3a; 
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.titulo-sobre::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #8fb67c; 
+    position: absolute;
+    bottom: -5px;
+}
+
+.coluna-texto p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.coluna-imagem {
+    flex: 1;
+    text-align: center;
+}
+
+.cabecalho-imagem {
+    margin-bottom: 20px;
+}
+
+.destaque-verde {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.subtitulo-imagem {
+    font-size: 18px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.imagem-composteira {
+    max-width: 100%;
+    height: auto;
+}
