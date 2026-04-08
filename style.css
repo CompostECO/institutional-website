@@ -14,7 +14,7 @@
   --lime-900: #365314;
   --lime-950: #1A2E05;
 
-  /* neutral */ 
+  /* neutral */
   --olive-50: #FBFBF9;
   --olive-100: #F4F4F0;
   --olive-400: #ABAB9C;
@@ -174,26 +174,42 @@ ul {
 }
 
 .link {
-  color: var(--lime-950);
+  color: var(--lime-900);
   text-decoration: underline;
-  font-size: 1rem;
-  padding: 8px 16px;
+  /* font-size: 1rem;
+  padding: 8px 16px; */
   font-weight: 400;
   border: none;
   cursor: pointer;
 }
 
+.input-with-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.input-with-label>input {
+  background: var(--olive-100);
+  padding: 0.4rem 0.4rem 0.4rem 0.8rem;
+  border-radius: 1rem;
+}
+
 /* HEADER */
 header {
+  position: fixed;
   width: 100dvw;
   max-width: 1020px;
   background: var(--lime-900);
-  padding: 0.6rem 1rem;
-  margin: 4px auto;
+  padding: 0.8rem 1.4rem;
+  margin: 4px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 10rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
-header > .container {
+header>.container {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -201,23 +217,24 @@ header > .container {
   justify-content: space-between;
 }
 
-header > .container > nav {
+header>.container>nav {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   padding-right: 4rem;
 }
 
-header > .container > nav > ul {
+header>.container>nav>ul {
   display: flex;
   gap: 1.5rem;
 }
 
-header > .container > nav > ul > a {
+header>.container>nav>ul>a {
   color: var(--olive-50);
 }
 
-header > .container > nav > ul > button, .button-primary-light {
+header>.container>nav>ul>button,
+.button-primary-light {
   padding: 0.3rem 1.2rem;
 }
 
@@ -225,14 +242,14 @@ header > .container > nav > ul > button, .button-primary-light {
 .services {
   padding: 10px;
 }
-  
+
 .services .block {
-  height: 300px;
   width: 800px;
   background-color: var(--lime-50);
+  margin-top: 1rem;
   border-radius: 40px;
 }
-  
+
 .services .block-title {
   color: var(--lime-900);
   padding: 10px;
@@ -241,16 +258,14 @@ header > .container > nav > ul > button, .button-primary-light {
   justify-content: center;
   flex-direction: column;
   gap: 10px;
-  height: 100px;
   width: 1000px;
 }
-  
+
 .services .block-title .heading-lg {
   color: var(--lime-900);
 }
 
 .services .container-servicos {
-  height: 800px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -258,35 +273,36 @@ header > .container > nav > ul > button, .button-primary-light {
   flex-direction: column;
 }
 
-.services .block h2{
+.services .block h2 {
   color: var(--lime-900);
   padding: 10px;
   display: flex;
   justify-content: center;
 }
 
-.services .minor-block{
+.services .minor-block {
   padding-left: 30px;
 }
 
-.services .minor-block-collective{
-display: flex;
-flex-direction: row;
-margin-left: 5px;
+.services .minor-block-collective {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
 }
 
 .services .minor-block-text {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
-  height: 150px;
   width: 420px;
   margin: 20px;
   margin-left: 50px;
 }
 
 .services .minor-block-text span {
-  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
 }
 
 .services .minor-block-collective .img {
@@ -311,74 +327,73 @@ margin-left: 5px;
 
 .services i {
   color: var(--lime-500);
- }
-  
+  font-size: 1.4rem;
+  margin-right: 8px;
+}
+
 /*Sobre nós*/
+.container-sobre {
+  display: flex;
+  width: 80dvw;
+  margin: auto;
+  padding: 5rem 0;
+}
+
 .container-sobre .container-sobre {
-    display: flex;
-    max-width: 1100px;
-    width: 100%;
-    align-items: center;
-    gap: 60px;
+  display: flex;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  gap: 60px;
 }
 
 
 .container-sobre .coluna-texto {
-    flex: 1;
+  flex: 1;
 }
 
 .container-sobre .titulo-sobre {
-    font-size: 28px;
-    color: var(--lime-900); 
-    margin-bottom: 25px;
-    position: relative;
-    display: inline-block;
+  font-size: 28px;
+  color: var(--lime-900);
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
 }
 
 
 .container-sobre .titulo-sobre::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #8fb67c; 
-    position: absolute;
-    bottom: -5px;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #8fb67c;
+  position: absolute;
+  bottom: -5px;
 }
 
 .container-sobre .coluna-texto p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 .container-sobre .coluna-imagem {
-    flex: 1;
-    text-align: center;
-}
-
-.container-sobre .cabecalho-imagem {
-    margin-bottom: 20px;
+  flex: 1;
+  text-align: center;
 }
 
 .container-sobre .destaque-verde {
-    font-size: 32px;
-    font-weight: bold;
-    color: #333;
-    letter-spacing: 1px;
-}
-
-.container-sobre .subtitulo-imagem {
-    font-size: 18px;
-    color: #555;
-    margin-top: 5px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 1px;
 }
 
 .container-sobre .imagem-composteira {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* FOOTER */
@@ -399,19 +414,19 @@ footer .ph {
   font-size: 1.5rem;
 }
 
-footer > .footer-container {
+footer>.footer-container {
   padding: 2rem;
   display: flex;
   align-items: start;
   justify-content: space-between;
 }
 
-footer > .footer-container > .footer-section:nth-child(1){
+footer>.footer-container>.footer-section:nth-child(1) {
   flex: 1;
   min-width: inherit;
-} 
+}
 
-footer > .footer-container > .footer-section {
+footer>.footer-container>.footer-section {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -425,13 +440,13 @@ footer .list {
   gap: 4px;
 }
 
-footer .list > span {
+footer .list>span {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
-footer > .copyright {
+footer>.copyright {
   width: 100%;
   display: flex;
   justify-content: center;

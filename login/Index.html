@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastro</title>
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
 </head>
 
 <body>
 
   <!-- login -->
   <main class="cadastro-page">
-
+    <a href="../index.html" class="back">
+      <i class="ph ph-sign-out"></i>
+    </a>
     <div class="cadastro-card">
 
       <img src="../public/images/logo.svg" alt="Logo">
@@ -21,22 +27,25 @@
       <p class="body-xs">Faça login para acessar a plataforma</p>
 
       <span class="input-with-label">
-        <label class="label-input" id="ipt_email">Email</label>
-        <input type="email" placeholder="Email">
+        <label for="ipt_email">Email</label>
+        <input type="email" placeholder="Email" id="ipt_email">
       </span>
 
-       <span class="input-with-label">
-            <label class="etiqueta-campo">Senha</label>
-            <input type="password" class="caixa-texto-entrada" placeholder="Senha" id="ipt_senha">
-            <a href="#" class="link-recuperar-senha">Esqueceu a senha?</a>
-       </span>
+      <span class="input-with-label">
+        <label for="ipt_password">Senha</label>
+        <input type="password" placeholder="Senha" id="ipt_password">
+        <a href="#" class="body-xs link link-recuperar-senha">Esqueceu a senha?</a>
+      </span>
 
-      <button class="button-primary-dark" >Entrar</button>
+      <button class="button-primary-dark">Entrar</button>
 
-      <a class="link">Cadastre-se Aqui</a>
+      <a href="../cadastro/index.html" id="link-criar-conta" class="link">
+        <p>Ainda não tem uma conta? Cadastre-se</p>
+      </a>
 
     </div>
   </main>
 
 </body>
+
 </html>
