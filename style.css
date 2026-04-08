@@ -200,13 +200,14 @@ header {
   position: fixed;
   width: 100dvw;
   max-width: 1020px;
-  background: var(--lime-900);
+  background: var(--lime-950);
   padding: 0.8rem 1.4rem;
   margin: 4px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 10rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 1000 !important;
 }
 
 header>.container {
@@ -237,10 +238,11 @@ header>.container>nav>ul>button,
 .button-primary-light {
   padding: 0.3rem 1.2rem;
 }
+
 /* ===== HERO ===== */
 .hero {
   min-height: 100vh;
-  background: url('./Intersect (1).png') no-repeat center;
+  background: url('public/images/hero-banner.png') no-repeat center;
   background-size: cover;
 
   display: flex;
@@ -272,6 +274,7 @@ header>.container>nav>ul>button,
 .hero h1 {
   font-size: 64px;
   font-weight: 700;
+  color: var(--lime-50);
 }
 
 .hero h1 span {
