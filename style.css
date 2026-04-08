@@ -197,12 +197,16 @@ ul {
 
 /* HEADER */
 header {
+  position: fixed;
   width: 100dvw;
   max-width: 1020px;
   background: var(--lime-900);
-  padding: 0.6rem 1rem;
-  margin: 4px auto;
+  padding: 0.8rem 1.4rem;
+  margin: 4px;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 10rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 header>.container {
