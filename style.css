@@ -542,3 +542,78 @@ footer>.copyright {
   padding: 12px;
   border-top: var(--olive-400) 1px solid
 }
+
+
+.container-calculator{
+  background-color: var(--lime-50);
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-calculator .container {
+  gap: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.container-calculator .container h1 {
+  color: var(--lime-900);
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.container-calculator .container span{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container-calculator .container .container-span {
+  display: flex;
+  padding: 10px;
+  height: 90px;
+}
+
+.container-calculator .container-linha{
+  background-color: var(--lime-800);
+  height: 100%;
+  width: 4px;
+}
+
+.container-calculator .container .form {
+  height: 70px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.container-calculator .container .form select{
+  width: 90px;
+  height: 21px;
+
+}
+
+.container-calculator .container .container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-calculator .container .container-form p{
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding: 7px;
+}
+
+.container-calculator input {
+  height: 30px;
+  border-radius: 5px;
+  padding: 7px;
+}
