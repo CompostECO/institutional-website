@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css"
     href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
 </head>
+<script src="script.js" defer></script>
 
 <body>
   <!-- <p class="heading-lg text-lime-950">Título grande</p>
@@ -114,6 +115,51 @@
 
     <div class="coluna-imagem">
       <img src="./public/images/composteira.png" alt="Ilustração de uma composteira" class="imagem-composteira">
+    </div>
+  </section>
+
+  <section>
+    <div class="container-calculator">
+          <div class="container">
+              <div>
+                  <h1>Quanto você perde?</h1>
+              </div>
+              <div class="container-span">
+                  <span>
+                      O monitoramento constante da temperatura e da umidade se torna essencial dentro da vermicompostagem. Caso não tenha um cuidado diário dentro da composteira,  atrasos na produção do humus podem ocorrer e até mesmo a morte das minhocas.
+                  </span>
+              </div>
+              <div class="container-span">
+                  <span>
+                      Analisando as possibilidades desse cenário desenvolvemos por meio de pesquisas, uma calculadora para mensurar perdas e gastos, caso as condições na composteira não sejam ideais para o desenvolvimento da minhoca.
+                  </span>
+              </div>
+          </div>
+          <div class="container-linha">
+          </div>
+          <div class="container">
+              <div>
+                  <h1>Calculadora financeira</h1>
+              </div>
+              <div class="container-form">
+                  <diV class="form">
+                      <p>Área total:</p>
+                      <span class="input-with-label">
+                          <input class="body-sm" id="inp1" type="text">
+                      </span>
+                  </diV>
+                  <div class="form">
+                      <p>Quantidade de caixas:</p>
+                      <span class="input-with-label">
+                          <input class="body-sm" id="inp2" type="text">
+                      </span>
+                  </div>
+                  <div>
+                      <button class="button-primary-dark" onclick="funcao()">Calcular</button>
+                  </div>
+                  <p id="pp"></p>
+              </div>
+          </div>
     </div>
   </section>
   <footer>
