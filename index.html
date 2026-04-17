@@ -46,7 +46,8 @@
     <div class="hero-content">
       <h1>Compost<span>Eco</span></h1>
       <p>
-        Desenvolvemos tecnologia de monitoramento para agricultores garantirem compostagem de qualidade e economizarem em adubos
+        Desenvolvemos tecnologia de monitoramento para agricultores garantirem compostagem de qualidade e economizarem
+        em adubos
       </p>
     </div>
   </section>
@@ -120,47 +121,62 @@
 
   <section>
     <div class="container-calculator">
-          <div class="container">
-              <div>
-                  <h1>Quanto você perde?</h1>
-              </div>
-              <div class="container-span">
-                  <span>
-                      O monitoramento constante da temperatura e da umidade se torna essencial dentro da vermicompostagem. Caso não tenha um cuidado diário dentro da composteira,  atrasos na produção do humus podem ocorrer e até mesmo a morte das minhocas.
-                  </span>
-              </div>
-              <div class="container-span">
-                  <span>
-                      Analisando as possibilidades desse cenário desenvolvemos por meio de pesquisas, uma calculadora para mensurar perdas e gastos, caso as condições na composteira não sejam ideais para o desenvolvimento da minhoca.
-                  </span>
-              </div>
+      <div class="container">
+        <div>
+          <h1>Por que desse monitoramento?</h1>
+        </div>
+        <div class="container-span">
+          <span>
+            As minhocas são seres vivos, que, como qualquer outro, estão sujeitas a mudanças na temperatura, uma
+            temperatura fora da faixa ideal pode prejudicar esses pequenos seres. No frio, seus metabolismos
+            desaceleram, no calor, elas tentam fugir das caixas, ou seja, em ambas as situações, a produção desacelera.
+            Mesmo que não sejam o foco principal, microrganismos tem um impacto significativo na degradação da materia orgânica,
+            para eles, um local úmido é de extrema importância para que esse processo ocorra.
+          </span>
+        </div>
+        <div>
+          <h1>O que eu perco sem o monitoramento?</h1>
+        </div>
+        <div class="container-span">
+          <span>
+            Bom, eis uma questão complicada, mas, não sem resposta, para ajudar com essa pergunta, nós da CompostECO desenvolvemos um simulador ficanceiro para você, para
+            ele, consideramos que você utiliza 16g de adubo por m², como o preço do adubo é uma informação muito volátil, gostariamos de que você nos informasse o preço que você paga por ele
+          </span>
+        </div>
+      </div>
+      <div class="container-linha">
+      </div>
+      <div class="container">
+        <div>
+          <h1>Simulador financeira</h1>
+        </div>
+        <div class="container-form">
+          <diV class="form">
+            <p>Quanto você gasta por Kg de adubo?:</p>
+            <span class="input-with-label">
+              <input class="body-sm" id="inpPrecoKG" type="text">
+            </span>
+          </diV>
+          <div class="container-form">
+            <diV class="form">
+              <p>Área do seu plantio em m²:</p>
+              <span class="input-with-label">
+                <input class="body-sm" id="inp1" type="text">
+              </span>
+            </diV>
+            <div class="form">
+              <p>Quantidade de caixas:</p>
+              <span class="input-with-label">
+                <input class="body-sm" id="inp2" type="text">
+              </span>
+            </div>
+            <div>
+              <button class="button-primary-dark" onclick="funcao()">Calcular</button>
+            </div>
+            <p id="pp"></p>
           </div>
-          <div class="container-linha">
-          </div>
-          <div class="container">
-              <div>
-                  <h1>Calculadora financeira</h1>
-              </div>
-              <div class="container-form">
-                  <diV class="form">
-                      <p>Área total:</p>
-                      <span class="input-with-label">
-                          <input class="body-sm" id="inp1" type="text">
-                      </span>
-                  </diV>
-                  <div class="form">
-                      <p>Quantidade de caixas:</p>
-                      <span class="input-with-label">
-                          <input class="body-sm" id="inp2" type="text">
-                      </span>
-                  </div>
-                  <div>
-                      <button class="button-primary-dark" onclick="funcao()">Calcular</button>
-                  </div>
-                  <p id="pp"></p>
-              </div>
-          </div>
-    </div>
+        </div>
+      </div>
   </section>
   <footer>
     <div class="footer-container">
