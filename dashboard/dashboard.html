@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+      <img src="../public//images/logo.svg" alt="Logo da CompostEco">
+      <nav>
+        <ul>
+        <a class="body-md" href="../index.html#hero-section"">Início</a>
+        <a class="body-md" href="../index.html#about-section">Sobre Nós</a>
+        <a class="body-md" href="../index.html#services-section">Nossos Serviços</a>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+    <div class="containerDash"> 
+        <div class="containerKPI">
+            <div class="card">
+                 <h2>Alertas de temperatura</h2>
+                <div class="alert">
+                    <span>Temperatura muito alta! <i class="fa-solid fa-triangle-exclamation iconAlert"></i></i></span> 
+                    <span>40° Celcius </span>
+                    <span>Hora: 14:00</span>
+                </div>
+                <div class="alert">
+                    <span>Temperatura muito alta! <i class="fa-solid fa-triangle-exclamation iconAlert"></i></i></span> 
+                    <span>38° Celcius </span>
+                    <span>Hora: 15:00</span>
+                </div>
+                <div class="alert">
+                    <span>Temperatura excedente! <i class="fa-solid fa-triangle-exclamation iconAlertYelow"></i></i></span> 
+                    <span>34° Celcius </span>
+                    <span>Hora: 16:00</span>
+                </div>
+            </div>
+              <div class="card">
+                 <h2>Alertas de umidade</h2>
+                <div class="alert">
+                    <span>Umidade muito baixa! <i class="fa-solid fa-triangle-exclamation iconAlert"></i></i></span> 
+                    <span>60% </span>
+                    <span>Hora: 16:00</span>
+                </div>
+                <div class="alert">
+                    <span>Umidade baixa! <i class="fa-solid fa-triangle-exclamation iconAlert"></i></i></span> 
+                    <span>64% </span>
+                    <span>Hora: 16:00</span>
+                </div>
+                <div class="alert">
+                    <span>Umidade caiu! <i class="fa-solid fa-triangle-exclamation iconAlertYelow"></i></i></span> 
+                    <span>71% </i></span>
+                    <span>Hora: 16:00</span>
+                </div>
+            </div>
+        </div>
+        <div class="medicao"> 
+             <div class="dashboard"> 
+                <div class="linha">
+                    <canvas id="linha"></canvas>
+                </div>
+                <div class="linha">
+                    <canvas id="barras"></canvas>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+     <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h1 class="heading-lg">CompostEco</h1>
+        <p class="body-sm">Transformando resíduos orgânicos em soluções sustentáveis para um futuro mais verde.</p>
+      </div>
+      <div class="footer-section"></div>
+      <div class="footer-section">
+        <div class="">
+          <h1 class="heading-lg">Navegação</h1>
+          <div class="body-sm list">
+            <a href="../index.html#hero-section">Início</a>
+            <a href="../index.html#about-section">Sobre nós</a>
+            <a href="../">Nossos serviços</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h1 class="heading-lg">Nossas redes</h1>
+        <div class="body-sm list">
+          <span><i class="ph ph-instagram-logo"></i><a>Instagram</a></span>
+          <span><i class="ph ph-whatsapp-logo"></i><a>Whatsapp</a></span>
+          <span><i class="ph ph-facebook-logo"></i><a>Facebook</a></span>
+          <span><i class="ph ph-telegram-logo"></i><a>Telegram</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">Copyright © 2026 CompostEco Corp.</div>
+  </footer>
+
+    
+</body>
+</html>
+<script>
+    const ctx = document.getElementById('linha');
+    const barras = document.getElementById('barras');
+
+    new Chart(barras, {
+        type: 'line',
+        data: {
+        labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+        datasets: [
+                {
+                label: 'Umidade',
+                data: [87, 90, 60, 64, 71, 80],
+                borderWidth: 3,
+                // borderColor: 'rgba(153, 246, 228)',
+                borderColor: 'rgba(153, 246, 228)',
+                backgroundColor: 'rgba(153, 246, 228)',
+                tension: 0.2
+                },
+            ],
+        
+        }, 
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true,
+            }
+        }
+        }
+    },);
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+        labels: ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'],
+        datasets: [
+                {
+                label: 'Temperatura',
+                data: [28, 27, 40, 38, 34, 26],
+                borderWidth: 3,
+                borderColor: 'rgba(175, 230, 84)',
+                backgroundColor: 'rgba(175, 230, 84)'
+                },
+        
+            ],
+        
+        }, 
+        options: {
+        scales: {
+            y: {
+            beginAtZero: true,
+            }
+        }
+        }
+    },);
+
+
+</script>
