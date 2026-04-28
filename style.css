@@ -546,10 +546,10 @@ footer>.copyright {
 
 .container-calculator{
   background-color: var(--lime-50);
-  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 30px;
 }
 
 .container-calculator .container {
